@@ -68,7 +68,7 @@ function clockString(ms) {
 }
 
 function ucapan() {
-  const time = moment.tz('Asia/Muscat').format('HH A')
+  const time = moment.tz('Africa/Mansoura').format('HH A')
   let res = "صباح الخير ☀️"
   if (time >= 4) {
     res = "صباح الخير 🌄"
