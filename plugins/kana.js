@@ -5,7 +5,7 @@ handler.all = async function(m) {
   const chat = global.db.data.chats[m.chat];
   if (/^دراكن$/i.test(m.text) && !chat.isBanned) {
     conn.sendPresenceUpdate('recording', m.chat);
-    await m.reply(`*اهلا, ¿انا لوفي?*`);
+    await m.reply(`*اهلا, ¿انا دراكن?*`);
     m.conn.sendMessage(m.chat, {audio: {url: vn}, fileName: 'error.mp3', mimetype: 'audio/mpeg', ptt: true}, {quoted: m});
   }
   return !0;
